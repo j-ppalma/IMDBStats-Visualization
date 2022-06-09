@@ -5,9 +5,9 @@ account: jppalma
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 6460187
-bundleId: 5992831
+bundleId: 5993242
 url: https://jppalma.shinyapps.io/assignment4/
-when: 1654785658.79036
-lastSyncTime: 1654785658.79036
+when: 1654792870.85513
+lastSyncTime: 1654792870.85513
 asMultiple: FALSE
 asStatic: FALSE

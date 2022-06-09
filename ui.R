@@ -1,5 +1,6 @@
 library(shinydashboard)
 library(plotly)
+library(magick)
 
 header <- dashboardHeader(title = "IMDBStat")
 
@@ -14,15 +15,13 @@ sidebar <- dashboardSidebar(
     
   )
 )
-
 body <- dashboardBody(  # Boxes need to be put in a row (or column)
   fluidRow(
     
     tabItems(
       tabItem(tabName = "hp",
               h2(align="center","IMDBStat - Data Visualization Assignment 4" ),
-              box(align="center", width = 6,div(tags$img(src = "putlogo.png", width="300px"))),
-              box(height="320",align="center",h4("IMDBStat is a dashboard that uses a IMDB dataset taken from kaggle, which will be available on the gitup, for the purpose of facilitating the analysis of the movies success or unsuccess and accessing some statistics in an easy way. Its was develloped as the assignment 4 of Data Visualization, it was made individually, and it would be great to have that in consideration while evaluating it."))
+              box(width = "12",height="320",align="center",h4("IMDBStat is a dashboard that uses a IMDB dataset taken from kaggle, which will be available on the gitup, for the purpose of facilitating the analysis of the movies success or unsuccess and accessing some statistics in an easy way. Its was develloped as the assignment 4 of Data Visualization, it was made individually, and it would be great to have that in consideration while evaluating it."))
       ),
       tabItem(
         tabName = "vis1",
@@ -50,7 +49,7 @@ body <- dashboardBody(  # Boxes need to be put in a row (or column)
       tabName = "vis2",
       box(h2(align="center","IMDB Datatable",width=12),width = 6,height = 200,status = "danger", solidHeader = FALSE),
       box(
-        h3(align="center","Description",width=12),
+        h3(align="center","Description"),
         textOutput("description"),width = 6,height = 200,status = "danger", solidHeader = TRUE),
       basicPage(
         DT::dataTableOutput("mytable")
