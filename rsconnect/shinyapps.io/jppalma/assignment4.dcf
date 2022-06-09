@@ -1,0 +1,13 @@
+name: assignment4
+title: assignment4
+username:
+account: jppalma
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6460187
+bundleId: 5992831
+url: https://jppalma.shinyapps.io/assignment4/
+when: 1654785658.79036
+lastSyncTime: 1654785658.79036
+asMultiple: FALSE
+asStatic: FALSE
